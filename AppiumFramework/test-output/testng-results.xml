@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="2" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26861" started-at="2019-11-18T11:14:54 IST" finished-at="2019-11-18T11:15:21 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26861" started-at="2019-11-18T11:14:54 IST" finished-at="2019-11-18T11:15:21 IST">
+      <class name="practise.AppiumFramework.ChsTC2">
+        <test-method status="PASS" signature="launchCapabilities()[pri:0, instance:practise.AppiumFramework.ChsTC2@5f3a4b84]" name="launchCapabilities" is-config="true" duration-ms="26745" started-at="2019-11-18T11:14:54 IST" finished-at="2019-11-18T11:15:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchCapabilities -->
+        <test-method status="FAIL" signature="forgotUserNameValidDetails()[pri:1, instance:practise.AppiumFramework.ChsTC2@5f3a4b84]" name="forgotUserNameValidDetails" duration-ms="68" started-at="2019-11-18T11:15:21 IST" finished-at="2019-11-18T11:15:21 IST">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-474', ip: '55.55.55.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: md585af5f9a32c6a9ad7ad2b249..., appPackage: com.atmecs.xamarin.ConveyHe..., automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: md585af5f9a32c6a9ad7ad2b249..., appPackage: com.atmecs.xamarin.ConveyHe..., automationName: uiautomator2, deviceName: Android device, noReset: true, platformName: android, platformVersion: 8.1.0, udid: f06a976f}, deviceApiLevel: 27, deviceManufacturer: Xiaomi, deviceModel: Redmi Y2, deviceName: f06a976f, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: f06a976f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 50, takesScreenshot: true, udid: f06a976f, viewportRect: {height: 1294, left: 0, top: 50, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: a016d72a-e2e4-4e4e-897f-50c095237487
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Forgot Username").instance(0))}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-474', ip: '55.55.55.197', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: md585af5f9a32c6a9ad7ad2b249..., appPackage: com.atmecs.xamarin.ConveyHe..., automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: md585af5f9a32c6a9ad7ad2b249..., appPackage: com.atmecs.xamarin.ConveyHe..., automationName: uiautomator2, deviceName: Android device, noReset: true, platformName: android, platformVersion: 8.1.0, udid: f06a976f}, deviceApiLevel: 27, deviceManufacturer: Xiaomi, deviceModel: Redmi Y2, deviceName: f06a976f, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: f06a976f, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 50, takesScreenshot: true, udid: f06a976f, viewportRect: {height: 1294, left: 0, top: 50, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: a016d72a-e2e4-4e4e-897f-50c095237487
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Forgot Username").instance(0))}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+at io.appium.java_client.MobileBy$ByAndroidUIAutomator.findElement(MobileBy.java:278)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at practise.AppiumFramework.Utilities.scrollAndClick(Utilities.java:49)
+at pageObjects.LoginPage.forgotUsername(LoginPage.java:223)
+at practise.AppiumFramework.ChsTC2.forgotUserNameValidDetails(ChsTC2.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotUserNameValidDetails -->
+      </class> <!-- practise.AppiumFramework.ChsTC2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
